@@ -37,7 +37,7 @@ names(workdata)     <-      c("date", "time", "active_power", "reactive_power", 
 # Convert the dates.
 
 datetime            <-      paste(as.Date(workdata$date), workdata$time)
-workdata$Datetime   <-      as.POSIXct(datetime, format = "%d/%m/%Y %T")
+workdata$Datetime   <-      as.POSIXct(datetime)
 
 # Plot
 
